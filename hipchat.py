@@ -5,9 +5,8 @@ import time
 
 
 headers = {
-        'authorization': "Bearer 8icaSqRBrp3DTsn2IonoWW4BFxCyDm9rwTVXUiVO",
-        'cache-control': "no-cache",
-        'postman-token': "dd5930ae-38e8-1925-7638-797a37ebbd54"
+        'authorization': 'Bearer 8icaSqRBrp3DTsn2IonoWW4BFxCyDm9rwTVXUiVO',
+        'cache-control': 'no-cache',
     }
 
 ## Individual User's Chat Extraction Starts from Here
@@ -36,9 +35,9 @@ def get_chat_for_indivdual_user(users_dict):
     if not os.path.exists(dirName):
         os.mkdir(dirName)
         print("Directory " , dirName ,  " Created ")
-    else:    
+    else:
         print("Directory " , dirName ,  " already exists")
-    
+
     chat_headers = {
         'authorization': "Bearer 8icaSqRBrp3DTsn2IonoWW4BFxCyDm9rwTVXUiVO",
         'cache-control': "no-cache",
@@ -103,9 +102,9 @@ def get_chat_for_indivdual_room(rooms_dict):
     if not os.path.exists(dirName):
         os.mkdir(dirName)
         print("Directory " , dirName ,  " Created ")
-    else:    
+    else:
         print("Directory " , dirName ,  " already exists")
-    
+
     chat_headers = {
         'authorization': "Bearer 8icaSqRBrp3DTsn2IonoWW4BFxCyDm9rwTVXUiVO",
         'cache-control': "no-cache",
